@@ -72,12 +72,14 @@ main {
       background: linear-gradient(90deg, $terra-cotta, 30%, $cadet-blue);
       background-size: 200% 200%;
       animation: GradientMove 5s ease infinite;
+      animation: fadeIn 1s ease-in-out;
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     p {
       font-family: 'Inter';
+      animation: fadeIn 1.5s ease-in-out;
       font-size: 2rem;
     }
   }

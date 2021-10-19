@@ -32,6 +32,24 @@
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 812px) {
   nav {
     display: none !important;
@@ -153,12 +171,16 @@ main .main-left h1 {
   background-size: 200% 200%;
   -webkit-animation: GradientMove 5s ease infinite;
           animation: GradientMove 5s ease infinite;
+  -webkit-animation: fadeIn 1s ease-in-out;
+          animation: fadeIn 1s ease-in-out;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 main .main-left p {
   font-family: 'Inter';
+  -webkit-animation: fadeIn 1.5s ease-in-out;
+          animation: fadeIn 1.5s ease-in-out;
   font-size: 2rem;
 }
 

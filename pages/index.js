@@ -7,6 +7,11 @@ export default function Home() {
     <>
       <Head>
         <title>Bid721 - NFT Auctioning</title>
+        <meta
+          name='description'
+          content='A decentralized art auction platform.'
+        />
+        <meta name='author' content='Matyi Kari' />
       </Head>
       <nav>
         <h2>
