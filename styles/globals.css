@@ -1,16 +1,147 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: 'Inter';
+  src: url(./Inter.ttf);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: 'Inter Bold';
+  src: url(./Inter-ExtraBold.ttf);
+}
+
+@-webkit-keyframes GradientMove {
+  0% {
+    background-position: 0% 11%;
+  }
+  50% {
+    background-position: 100% 90%;
+  }
+  100% {
+    background-position: 0% 11%;
+  }
+}
+
+@keyframes GradientMove {
+  0% {
+    background-position: 0% 11%;
+  }
+  50% {
+    background-position: 100% 90%;
+  }
+  100% {
+    background-position: 0% 11%;
+  }
 }
 
 * {
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[20];
+      grid-template-columns: repeat(20, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom: #333333ff 1px solid;
+}
+
+nav h2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.5rem;
+  font-family: 'Inter', sans-serif;
+  color: #7d5ba6ff;
+  cursor: pointer;
+  display: sticky;
+}
+
+nav .nav-links {
+  grid-column-end: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-links span {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+nav .nav-links span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[20];
+      grid-template-columns: repeat(20, 1fr);
+  -ms-grid-rows: (200px)[20];
+      grid-template-rows: repeat(20, 200px);
+}
+
+main .main-left {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 7;
+  grid-column: 2 / span 7;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3 / span 2;
+}
+
+main .main-left h1 {
+  font-family: 'Inter bold';
+  font-size: 7rem;
+  background: -webkit-gradient(linear, left top, right top, from(#643173ff), color-stop(40%), to(#89ce94ff));
+  background: linear-gradient(90deg, #643173ff, 40%, #89ce94ff);
+  background-size: 200% 200%;
+  -webkit-animation: GradientMove 5s ease infinite;
+          animation: GradientMove 5s ease infinite;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main .main-left p {
+  font-family: 'Inter';
+  font-size: 2rem;
+}
+
+main .main-right {
+  -ms-grid-column: 12;
+  -ms-grid-column-span: 7;
+  grid-column: 12 / span 7;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+/*# sourceMappingURL=globals.css.map */
