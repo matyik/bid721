@@ -32,6 +32,16 @@ export default function Home() {
         </div>
         <div className='main-right'>
           <h3>Next Drop:</h3>
+          <Image
+            alt='Next Drop'
+            src='/photoshop-sphere.jpg'
+            width='500'
+            height='500'
+          />
+          <div className='dropinfo'>
+            <h4>Minimum Bid: 5 ETH</h4>
+            <h4>Author: Matyi Kari</h4>
+          </div>
         </div>
       </main>
     </>

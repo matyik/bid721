@@ -1,0 +1,17 @@
+@media screen and (max-width: 812px) {
+  nav {
+    display: none !important;
+  }
+  main {
+    display: flex !important;
+    flex-direction: column;
+
+    h1 {
+      font-size: 5rem !important;
+    }
+    p {
+      font-size: 1rem !important;
+      margin-bottom: 1rem;
+    }
+  }
+}
