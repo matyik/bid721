@@ -45,6 +45,9 @@ body {
 }
 
 nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[20];
@@ -55,7 +58,9 @@ nav {
   padding: 1rem;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-bottom: #333333ff 1px solid;
+  border-bottom: #9bc1bcff 1px solid;
+  -webkit-backdrop-filter: blur(2px) brightness(60%);
+          backdrop-filter: blur(2px) brightness(60%);
 }
 
 nav h2 {
@@ -69,9 +74,8 @@ nav h2 {
   display: flex;
   font-size: 2.5rem;
   font-family: 'Inter', sans-serif;
-  color: #7d5ba6ff;
+  color: #5ca4a9ff;
   cursor: pointer;
-  display: sticky;
 }
 
 nav .nav-links {
@@ -123,8 +127,8 @@ main .main-left {
 main .main-left h1 {
   font-family: 'Inter bold';
   font-size: 7rem;
-  background: -webkit-gradient(linear, left top, right top, from(#643173ff), color-stop(40%), to(#89ce94ff));
-  background: linear-gradient(90deg, #643173ff, 40%, #89ce94ff);
+  background: -webkit-gradient(linear, left top, right top, from(#ed6a5aff), color-stop(40%), to(#5ca4a9ff));
+  background: linear-gradient(90deg, #ed6a5aff, 40%, #5ca4a9ff);
   background-size: 200% 200%;
   -webkit-animation: GradientMove 5s ease infinite;
           animation: GradientMove 5s ease infinite;
