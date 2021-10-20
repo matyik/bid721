@@ -45,7 +45,7 @@ export default function Home() {
           />
           <div className='dropinfo'>
             <h4>Minimum Bid: 5 ETH</h4>
-            <h4>Author: Matyi Kari</h4>
+            <h4>Artist: Matyi Kari</h4>
           </div>
         </div>
       </main>

@@ -99,13 +99,14 @@ nav {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-bottom: #9bc1bcff 1px solid;
-  -webkit-backdrop-filter: blur(3px) brightness(60%);
-          backdrop-filter: blur(3px) brightness(60%);
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+          backdrop-filter: saturate(180%) blur(5px);
 }
 
 nav h2 {
   -ms-grid-column: 2;
-  grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -169,10 +170,8 @@ main .main-left h1 {
   background: -webkit-gradient(linear, left top, right top, from(#ed6a5aff), color-stop(30%), to(#5ca4a9ff));
   background: linear-gradient(90deg, #ed6a5aff, 30%, #5ca4a9ff);
   background-size: 200% 200%;
-  -webkit-animation: GradientMove 5s ease infinite;
-          animation: GradientMove 5s ease infinite;
-  -webkit-animation: fadeIn 1s ease-in-out;
-          animation: fadeIn 1s ease-in-out;
+  -webkit-animation: GradientMove 5s ease infinite, fadeIn 1s ease-in-out;
+          animation: GradientMove 5s ease infinite, fadeIn 1s ease-in-out;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
