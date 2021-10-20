@@ -49,6 +49,57 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <div className='drop-list'>
+        <h3>Upcoming Drops:</h3>
+        <div className='drop-card'>
+          <h4>Test Art</h4>
+          <div className='info-container'>
+            <Image
+              alt='Test Art'
+              src='/photoshop-sphere.jpg'
+              width='150'
+              height='150'
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+              eius exercitationem totam pariatur nemo esse tenetur non quasi
+              magni excepturi!
+            </p>
+          </div>
+        </div>
+        <div className='drop-card'>
+          <h4>Test Art</h4>
+          <div className='info-container'>
+            <Image
+              alt='Test Art'
+              src='/photoshop-sphere.jpg'
+              width='150'
+              height='150'
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+              eius exercitationem totam pariatur nemo esse tenetur non quasi
+              magni excepturi!
+            </p>
+          </div>
+        </div>
+        <div className='drop-card'>
+          <h4>Test Art</h4>
+          <div className='info-container'>
+            <Image
+              alt='Test Art'
+              src='/photoshop-sphere.jpg'
+              width='150'
+              height='150'
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+              eius exercitationem totam pariatur nemo esse tenetur non quasi
+              magni excepturi!
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
